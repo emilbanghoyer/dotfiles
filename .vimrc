@@ -1,31 +1,3 @@
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
-" Plugins 
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
-call plug#begin('~/.vim/plugged')
-
-" Vim Airline plugin for status line
-Plug 'vim-airline/vim-airline'
-
-" Vim Airline themes
-Plug 'vim-airline/vim-airline-themes'
-
-call plug#end()
-
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
-" Plugin settings 
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
-let g:airline_theme='solarized'
-let g:airline_solarized_bg='dark'
-
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
-" Settings 
-""""""""""""""""""""""""""""""""""""
-""""""""""""""""""""""""""""""""""""
 set hlsearch
 set incsearch
 set autoindent
@@ -42,6 +14,9 @@ set noswapfile
 set expandtab
 set smarttab
 set number
+set ruler
+set tabstop=4
+set shiftwidth=4
 syntax on
 
 """"""""""""""""""""""""""""""""""""
@@ -70,8 +45,3 @@ vnoremap <S-Tab> <<<Esc>gv
 " in Normal Mode
 nnoremap <space>w :w<cr>
 nnoremap <space>q :q<cr>
-
-" L for end of line and H for beginning of line
-" in Visual mode
-vnoremap L $
-vnoremap H ^
